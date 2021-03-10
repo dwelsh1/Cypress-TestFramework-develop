@@ -1,0 +1,28 @@
+{
+  "name": "cypress-testframework",
+  "version": "1.0.0",
+  "description": "",
+  "repository": "",
+  "main": "",
+  "scripts": {
+    "open": "cypress open",
+    "test": "./node_modules/.bin/cypress run",
+    "dev": "./node_modules/.bin/cypress open",
+    "cy:open": "./node_modules/.bin/cypress open",
+    "cy:run": "./node_modules/.bin/cypress run",
+    "cy:test:dev": "node runner.js cypress run --env configFile=dev",
+    "cy:test:qa": "node runner.js cypress run --env TAGS=\"@UI\" configFile=qa"
+  },
+  "author": "far11ven",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^6.6.0",
+    "cypress-dark": "^1.7.14",
+    "cypress-xpath": "^1.6.2",
+    "minimist": "^1.2.5",
+    "mocha": "^8.3.1",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
+  }
+}

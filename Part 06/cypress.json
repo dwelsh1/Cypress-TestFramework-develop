@@ -1,0 +1,12 @@
+{
+  "retries": {
+    "runMode": 1,
+    "openMode": 0
+  },
+"integrationFolder": "cypress/tests",  
+"reporter": "mochawesome",
+"reporterOptions": {
+    "reportFilename": "test-report"
+  },
+"experimentalStudio": true
+}
